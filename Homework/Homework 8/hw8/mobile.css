@@ -1,0 +1,36 @@
+@media screen and (max-width: 600px) {
+    .global{
+        align-items: center;
+    }
+    body{
+        font-size: 11px;
+        justify-content: center;
+    }
+    header{
+        height: 20vh;
+        width:100vw;
+    }
+    nav>ul{
+        flex-direction: column;
+    }
+    nav>ul>li>a{
+        display: block;
+        width: 100vw;
+        height: 3vh;
+    }
+    section>div:first-child,
+    section>div:last-of-type{
+        flex-direction: column;
+        width: 100vw;
+        height: 17vh;
+    }
+    main{
+        height: 10vh;
+        width: 100vw;
+    }
+    footer, main, header{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+}

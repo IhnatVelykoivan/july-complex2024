@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.first{
+    display: flex;
+}
+.menu{
+    display: flex;
+}
+.first .menu>header{
+    display: flex;
+    flex-direction: row;
+}
+.first-info{
+    display: flex;
+}
+.first-block{
+    display: flex;
+}

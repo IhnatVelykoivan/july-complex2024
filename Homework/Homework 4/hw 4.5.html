@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        header{
+            width: 1728px;
+            height: 50px;
+            flex-shrink: 0;
+            background: #D9D9D9;
+        }
+        main{
+            width: 498px;
+            height: 823px;
+            flex-shrink: 0;
+            background: #A4A4A4;
+        }
+        .flex{
+            display: flex;
+            flex-direction: column;
+        }
+        .flexbox{
+            display: flex;
+            flex-direction: row;
+        }
+        .box1{
+            width: 702px;
+            height: 445px;
+            flex-shrink: 0;
+            background: #7F7A7A;
+        }
+        .box2{
+            width: 702px;
+            height: 378px;
+            flex-shrink: 0;
+            background: #615050;
+        }
+        aside{
+            width: 528px;
+            height: 823px;
+            flex-shrink: 0;
+            background: #C1C1C1;
+        }
+        footer{
+            width: 1728px;
+            height: 133px;
+            flex-shrink: 0;
+            background: #AFA9A9;
+        }
+    </style>
+</head>
+<body>
+<div class="flex">
+    <header></header>
+    <div class="flex">
+        <div class="flexbox">
+            <main></main>
+            <aside></aside>
+            <div class="flex">
+                <div class="box1"></div>
+                <div class="box2"></div>
+            </div>
+        </div>
+        <footer></footer>
+    </div>
+</div>
+
+
+</body>
+</html>

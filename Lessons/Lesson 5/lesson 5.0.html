@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        section{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #box1{
+            background-color: black;
+        }
+        #box2{
+            background-color: yellow;
+        }
+        #box3{
+            background-color: orange;
+        }
+
+    </style>
+</head>
+<body>
+<section id="box1">
+    <a href="#box2">Down</a>
+</section>
+<section id="box2">
+    <a href="#box3">Down</a>
+</section>
+<section id="box3">
+    <a href="#box1">Up</a>
+</section>
+</body>
+</html>

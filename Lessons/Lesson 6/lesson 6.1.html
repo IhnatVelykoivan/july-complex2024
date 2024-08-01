@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*ol{*/
+        /*    list-style-type: disc;*/
+        /*}*/
+        li::marker{
+            color: coral;
+            font-size: 20px;
+        }
+        ul{
+            list-style-type: none;
+        }
+        /*ol>li:nth-last-child(3n+10){*/
+        /*    color: #da2020;*/
+        /*}*/
+        /*ol>li:nth-child(3n+10){*/
+        /*    color: #da2020;*/
+        /*}*/
+        /*ol>li:nth-child(even){*/
+        /*    color: #5e2a2a;*/
+        /*}*/
+        /*ol>li:nth-child(odd){*/
+        /*    color: #644C4C;*/
+        /*}*/
+        /*li::first-line{*/
+        /*    color: #0d44a8;*/
+        /*    font-size: 20px;*/
+        /*    font-weight: 600;*/
+        /*}*/
+        li::after{
+            content: '???????';
+            color: chartreuse;
+        }
+        li::before{
+            content:'';
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            background-image: url("data:image/webp;base64,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");
+            background-size: cover;
+            margin-left: 6px;
+            border-radius: 50%;
+        }
+        li::selection{
+            background-color: #19191B;
+            color: gold;
+        }
+        a:visited{
+            color: #644C4C;
+        }
+        a:link{
+            color: #19191B;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+    <li>Adipisci consequatur in incidunt ipsa quis tempora.</li>
+    <li>Consequatur distinctio hic neque tempore, ut voluptates!</li>
+    <li>Aspernatur autem consectetur eligendi illum sapiente vel.</li>
+    <li>Ad animi aperiam facilis magnam modi saepe.</li>
+    <li>Exercitationem id molestiae nobis odio sapiente veniam?
+<!--    <ul>-->
+<!--        <li>Lorem ipsum.</li>-->
+<!--        <li>Laudantium, possimus.</li>-->
+<!--        <li>Blanditiis, quis!</li>-->
+<!--    </ul>-->
+<!--</li>-->
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda atque, blanditiis cum dolorum eius est harum incidunt ipsum magnam nam nemo quaerat quia quidem recusandae repudiandae sunt tempora temporibus ut veniam voluptatem! A, aut blanditiis earum enim ex fugiat harum iure libero minima modi natus nemo nihil non odio odit, praesentium quam quod vitae voluptas voluptate? Blanditiis corporis ea earum et molestiae mollitia, sapiente ullam. Accusamus amet architecto beatae doloribus, ducimus eligendi eos et fuga, fugiat hic incidunt libero magni, molestiae molestias necessitatibus omnis optio porro provident quasi quos reprehenderit temporibus vel veritatis. Autem debitis deleniti, dolores enim, est eum eveniet ex exercitationem illo illum impedit, itaque modi molestiae mollitia neque nesciunt odit perferendis possimus quia quod repellendus ut vero! Ab aliquid culpa cumque ducimus eligendi enim eos esse ex harum itaque iusto, laboriosam maiores nemo nihil nobis non officia omnis porro possimus quas quia quis reiciendis saepe temporibus tenetur ut vitae. Ad aliquam assumenda, blanditiis commodi, doloremque eos est, necessitatibus nemo quos sit sunt suscipit. Aliquam assumenda delectus ea facilis harum labore libero minima, placeat praesentium quisquam repellat ut vel vitae voluptas, voluptatum. Est mollitia nemo quas. Aspernatur corporis dolor enim explicabo, facere hic ipsam iusto minus natus ratione?</li>
+    <li>Aliquam animi, distinctio incidunt molestiae temporibus voluptatibus!</li>
+    <li>Doloremque laboriosam sequi unde. Non, quae, voluptatibus.</li>
+    <li>Eaque molestias non pariatur porro reiciendis sapiente.</li>
+    <li>Deleniti ducimus iusto maiores, praesentium quaerat totam?</li>
+    <li>Doloremque laboriosam sequi unde. Non, quae, voluptatibus.</li>
+    <li>Eaque molestias non pariatur porro reiciendis sapiente.</li>
+    <li>Deleniti ducimus iusto maiores, praesentium quaerat totam?</li>
+    <li>Doloremque laboriosam sequi unde. Non, quae, voluptatibus.</li>
+    <li>Eaque molestias non pariatur porro reiciendis sapiente.</li>
+    <li>Deleniti ducimus iusto maiores, praesentium quaerat totam?</li>
+</ul>
+<a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fsupertoys.az%2Fen%2Ftelepuzik-012-55&psig=AOvVaw3wx5aYG-vCPffCeuFZHJK4&ust=1721827592823000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCNiJ6uKhvYcDFQAAAAAdAAAAABAE">lorem</a>
+<a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fsupertoys.az%2Fen%2Ftelepuzik-012-55&psig=AOvVaw3wx5aYG-vCPffCeuFZHJK4&ust=1721827592823000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCNiJ6uKhvYcDFQAAAAAdAAAAABAE">lorem</a>
+<a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fsupertoys.az%2Fen%2Ftelepuzik-012-55&psig=AOvVaw3wx5aYG-vCPffCeuFZHJK4&ust=1721827592823000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCNiJ6uKhvYcDFQAAAAAdAAAAABAE">lorem</a>
+</body>
+</html>

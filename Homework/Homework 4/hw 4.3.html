@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .flex{
+            display: flex;
+            flex-direction: column;
+        }
+        header{
+            width: 1728px;
+            height: 244px;
+            flex-shrink: 0;
+            background: #D9D9D9;
+        }
+        main{
+            display: flex;
+
+        }
+        .box1{
+            width: 464px;
+            height: 629px;
+            flex-shrink: 0;
+            background: #C0BDBD;
+        }
+        .box2{
+            width: 800px;
+            height: 292px;
+            flex-shrink: 0;
+            background: #827878;
+        }
+        .box3{
+            width: 800px;
+            height: 340px;
+            flex-shrink: 0;
+            background: #B7ADAD;
+        }
+        aside{
+            display: flex;
+            align-items: flex-start;
+            /*justify-content: space-around;*/
+            flex-direction: column;
+            width: 464px;
+            height: 632px;
+            flex-shrink: 0;
+            background: #C0BDBD;
+        }
+        footer{
+            width: 1728px;
+            height: 244px;
+            flex-shrink: 0;
+            background: #D9D9D9;
+        }
+    </style>
+</head>
+<body>
+<div class="flex">
+<header></header>
+<main>
+    <aside></aside>
+    <div class="flex">
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+    <aside></aside>
+</main>
+<footer></footer>
+</div>
+</body>
+</html>

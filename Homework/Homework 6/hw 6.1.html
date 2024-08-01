@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        form{
+            background-color: white;
+            border: 1px solid white;
+            border-radius: 5px;
+            width: 700px;
+            height: 700px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .form{
+            background-color: white;
+            width: 650px;
+            height: 650px;
+            display: flex;
+            border: 2px gold solid;
+            flex-direction: column;
+            align-items: center;
+        }
+        .form h1{
+            content: url(" ");
+            width: 200px;
+            height: 100px;
+            background-size: 200px;
+            background-image: url("https://logosmarcas.net/wp-content/uploads/2020/04/Instagram-Logo.png");
+            display: block;
+            margin: 50px 200px;
+        }
+        section{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        input{
+            margin-top: 10px;
+            width: 400px;
+        }
+        label{
+            display:block;
+            margin-top: 10px;
+            width: 400px;
+        }
+        input[type=email]:focus{
+            outline: none;
+            border: 2px solid #c6b0bc;
+            border-radius: 2px;
+            background-color: #414167;
+        }
+        input[type='password']:focus{
+            outline: none;
+            border: 2px solid #c6b0bc;
+            border-radius: 2px;
+            background-color: #414167;
+        }
+        input[type='submit']{
+            margin-top: 20px;
+            width: 400px;
+            height: 25px;
+            border-radius: 10px;
+            background-color: #5454D4;
+            color: white;
+            border: none;
+        }
+        input[type='password']{
+            margin-top: 10px;
+            width: 400px;
+            height: 25px;
+        }
+        input[type='email']{
+            margin-top: 10px;
+            width: 400px;
+            height: 25px;
+        }
+        footer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 15px;
+        }
+        footer h2{
+            color: #7F7A7A;
+            padding-bottom: 20px;
+            font-family: "Edu AU VIC WA NT Hand", cursive;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+
+        }
+        footer li{
+            list-style: none;
+            text-decoration: none;
+
+        }
+        li::before{
+            content:'';
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            background-image: url('https://thumbs.dreamstime.com/b/facebook-logo-vector-eps-file-squared-coloured-easily-editable-have-white-background-high-resolution-255557233.jpg');
+            background-size: cover;
+            margin-right: 5px;
+            border-radius: 50%;
+        }
+        a{
+            text-decoration: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+<form>
+<div class="form">
+    <h1> </h1>
+    <section>
+        <label for="email"></label>
+        <input type="email" name="email" id="email" placeholder="Номер телефону, ім'я користувача або email">
+
+        <label for="password"></label>
+        <input type="password" name="password" id="password" placeholder="Пароль">
+    </section>
+    <input type="submit" value="Увійти">
+
+    <footer>
+        <h2>АБО</h2>
+        <li><a href="#"><strong>Увійти через Facebook</strong></a></li>
+        <a href="#">Забули пароль?</a>
+    </footer>
+</div>
+</form>
+</body>
+</html>

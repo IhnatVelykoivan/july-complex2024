@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100vh;
+}
+.global{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    height: 5vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
+nav>ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+nav>ul>li{
+    gap: 5px;
+    align-content: center;
+}
+nav>ul>li>a{
+    text-decoration: none;
+    color: white;
+    background-color: skyblue;
+    border-radius:3px;
+}
+main{
+    height: 40vh;
+    width: 100vw;
+    text-align: end;
+    background-color: skyblue;
+    display: flex;
+    color: white;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    align-content: end;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    gap: 10px;
+    margin:10px 10px 10px 10px;
+}
+section>div:first-child,
+section>div:last-of-type{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+article{
+    width:100vw;
+    height: 15vh;
+    background-color: skyblue;
+    color: white;
+    border-radius: 3px;
+    align-content: end;
+    text-align: end;
+}
+footer{
+    display: flex;
+    margin: 10px 10px 10px 10px;
+    height: 10vh;
+    width: 100vw;
+    background-color: skyblue;
+    color: white;
+    border-radius: 3px;
+    text-align: center;
+    align-content: center;
+}

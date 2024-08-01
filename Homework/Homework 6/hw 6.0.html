@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    body{
+      display: flex;
+      background-color: #7F7A7A;
+      justify-content: space-evenly;
+    }
+    form{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 500px;
+      height: 400px;
+      background-color: #bebecd;
+      border: 1px solid white;
+      border-radius: 5px;
+    }
+    header{
+      height: 75px;
+      width: 500px;
+      background-color: #8D8484;
+      text-align: center;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+    }
+    input{
+      margin-top: 10px;
+      width: 400px;
+    }
+    label{
+      display:block;
+      margin-top: 10px;
+      width: 400px;
+    }
+    input[type=email]:focus{
+      outline: none;
+      border: 2px solid deeppink;
+      border-radius: 2px;
+      background-color: #555563;
+    }
+    input[type='password']:focus{
+      outline: none;
+      border: 2px solid deeppink;
+      border-radius: 2px;
+      background-color: #555563;
+    }
+    input[type='checkbox']{
+      appearance: none;
+      width: 16px;
+      height: 16px;
+      border: 2px solid darkolivegreen;
+      margin: 0;
+    }
+
+    input[type='checkbox']:checked{
+      background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAAFEElEQVR4nO2dXahVRRTHf1evN0XLyK71Jn1RplYURAR9UFmBD0G3xIeCJKqHiCiIsl7SrKywvHkrtIcyJHrIiMoo0iAqLMs0TAgfCjOiKCu92ofZvTGxLhwO58zM3nv2mXNn1g/m6czee85/7T17rTVrzgFFURRFURQlTeYBg8Au4KC0r4BVwNzYg0uZo4BngX+B0TbtCDAE9MUebIriv28RvrltViOE5bkC4o818yQogeZ827Rjm47mhBhA7gyWEH+sPRl78Cmwq4IBjHekVGS4ggHMsUpFDlQwwP6qF1eoNAXtVAGrs6qCAVYGuH72zBWXsowbemb26gViqIQBng51cYX/czubCoj/XiqpiJnAcmB7Q+bxC+Ah+ayT9AGrHdPREQnckhD/eocLaD67LsK45gBPSZA1LG2nvHCTmfON+CMej/pIJCMkzcyCwY8JdvpjDzollpfwOJbFHnRK7ChhAPNiViLmXswxoZgEXAgsAd4CdgO/An/KC9d4ZM8AVwK9JEgMA0wALgXWiti+1/0BuAuYQkJsL2GAERHvmILXOgd4Athb4pqN7VvgMhJhWQUh9sjUYOMk4IGKWc52N8GjQA/jnH5xLasIsbbpaTDnvB342DO+qNJekSqKcc1AAKH2AHcDG4F/aha9ua0nAQYqPgmjkZsx/rinX94J28QF/AXYAtwDzJKppu4pZbRkM4m5K8iA+TLdjHZh2wecQgaYF+6aLn0avgSmkgnzu/RpeC0F97TI0zAoEa1pn8kK1QZgnaQRVgD3imu6oUNGMKkNpQWbO2QAU1+6oNUAcub4DscIxq2eHftLdxO3RngffA1Mj/3Fu4V3A0e/vl7YS7G/eDdwHHA4kPjfyDkXAoc83wdZxAc2bg549z/WcN6zJD3tOuYOMuftgAY4v+ncMzz2lL1BxhwL/B1I/O/aBFm9jt01B1NIW5flpoB3v6sC+nPLsReTKW8GNIBZwLdxm+VYU2KZHUdLhUMI8b+XBX0b0yzrGp+SITcEvPvNHO/DGos7aqLxrHg9oAF85/DzLOcwsUM2TAP+CCT+j8DEAtdu9zJ+nowYCHj3m58vCJF3MusX2fByQAMULcSaYfnJg9PJgKkVN103tp9L1oVuzTktcWPAu994NSFL77NIS7zjWebuY4CrSo7hEkv1RNKc4LHy9ZcUU7nE3ycl7GXoa1P9bdauk+ZOD2EfAZZ69Huhhp33ye8p3uoQda/ECBs9DFB1YX2ybHc9IE7BUGr7C5o51UPURdL3J0e/33NOIZdlqUPUDyWfP8vDULqWW4LdjgLas6XftR4GuCbsvZE+FzgENXPxGA87+g7L/K0UYLXDnTTpAd8SFVPCqBSgVzKW7QS9paFvj+w9sBlgsapfjAUWMbc1pZJPdohvkmgnqgHCZD5HgIua+i50GMDsylEKMEF89lZivtii/wqHAcy2VqUAPZLbaRbyUJupxPVrWGOuqlKA9Z45F2Os3yziZ7ViFZLpwKsSbB2WJFqrnMtpjrvf7KhRKjDZkexa5DDA1ap+vazU6DcuH2j0G9dd3a/Rbzxma/TbvZUSWyKPjdx/Gf3+2IPLgY8sBjB/3qPUyETZJqTRbyTmea6UKTWxuIbKNyXAnzLo2m+H+KSNAXTttwNMsuyUMVtYlZo517L2awp5lZpZotFvXNbp2m9c7mtTLXFG5HFltVt+R5MBHo89qNyYIh7Pg8DlsQejKIqiKFTkPxLQNUV7YPtuAAAAAElFTkSuQmCC");
+      background-size: cover;
+    }
+    input[type='submit']{
+      width: 150px;
+      border-radius: 7px;
+    }
+    section{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    div{
+      padding-top: 20px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      height: 25px;
+      width: 400px;
+    }
+
+  </style>
+</head>
+<body>
+<form>
+  <header>
+  <h1>Вхід в особистий кабінет</h1>
+  </header>
+  <section>
+  <label for="email"></label>
+  <input type="email" name="email" id="email" placeholder="login">
+
+  <label for="password"></label>
+  <input type="password" name="password" id="password" placeholder="password">
+  </section>
+
+  <div>
+    <label><input type="checkbox" name="remember-me">Запам'ятати мене</label>
+    <input type="submit" value="Вхід">
+  </div>
+</form>
+</body>
+</html>
