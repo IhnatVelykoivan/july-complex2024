@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .flex{
+            background-color: navajowhite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 300px;
+            gap: 20px;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: forestgreen;
+            transition: 1s;
+            box-shadow: 24px 28px 25px -16px rgba(0,0,0,0.72);
+        }
+        .box:hover{
+            background-color: navy;
+            border-radius: 44%;
+            transition: 3s;
+            box-shadow: 24px 28px 25px -16px rgba(0,0,0,0.72);
+            transform: scale(0.77);
+        }
+        .border{
+            border: 2px solid beige;
+        }
+    </style>
+</head>
+<body>
+<div class="flex">
+    <div class="box border"></div>
+    <div class="box border"></div>
+    <div class="box border"></div>
+    <div class="box border"></div>
+    <div class="box border"></div>
+    <div class="box border"></div>
+</div>
+
+
+</body>
+</html>

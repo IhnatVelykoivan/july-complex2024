@@ -1,0 +1,49 @@
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 800 400"><rect fill="%230288d1" width="800" height="400"/><path fill="%23029ae5" fill-opacity="0.4" d="M0 192L26.7 202.7C53.3 213 107 235 160 234.7C213.3 235 267 213 320 192C373.3 171 427 149 480 149.3C533.3 149 587 171 640 186.7C693.3 203 747 213 773.3 218.7L800 224L800 401L773.3 401C746.7 401 693 401 640 401C586.7 401 533 401 480 401C426.7 401 373 401 320 401C266.7 401 213 401 160 401C106.7 401 53 401 27 401L0 401Z"></path></svg>');
+    background-size: cover;
+    background-color: #0288d1;
+    color: white;
+}
+.container {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+}
+
+h1 {
+    font-family: 'Dancing Script', sans-serif;
+    color: #1E2A44;
+    font-size: 2.5em;
+}
+h2 {
+     font-family: "Bebas Neue", sans-serif;
+}
+
+
+.palette-image {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px 0;
+}
+
+.color-swatches {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.swatch {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
