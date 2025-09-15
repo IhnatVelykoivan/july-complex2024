@@ -1,7 +1,5 @@
-html{
-    @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Honk:MORF,SHLN@19,4.3&family=Lora:ital,wght@0,400..700;1,400..700&family=Orbitron:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Honk:MORF,SHLN@19,4.3&family=Lora:ital,wght@0,400..700;1,400..700&family=Orbitron:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-}
 * {
     margin: 0;
     padding: 0;
@@ -92,29 +90,21 @@ header a:hover {
     letter-spacing: 15px;
     margin: 20px 0;
     text-transform: uppercase;
-    text-align: center;
-    color: whitesmoke;
 }
-
 
 .main-home button {
     width: 200px;
     height: 50px;
     margin-top: 30px;
-    background: white;
-    padding: 25px;
-    border-radius: 8px;
+    background-color: black;
+    color: white;
     border: none;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
+
 .main-home button:hover {
-    transform:translateY(-5px);
     background-color: darkgreen;
-    border: none;
 }
 
 /* ABOUT */
@@ -192,12 +182,9 @@ header a:hover {
 }
 
 .main-service h2 {
-    font-size: 3rem;
-    letter-spacing: 15px;
-    margin: 20px 0;
-    text-transform: uppercase;
     text-align: center;
-    color: whitesmoke;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
 }
 
 .services-container {
@@ -242,12 +229,9 @@ header a:hover {
 }
 
 .main-blog h2 {
-    font-size: 3rem;
-    letter-spacing: 15px;
-    margin: 20px 0;
-    text-transform: uppercase;
     text-align: center;
-    color: whitesmoke;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
 }
 
 .blog-container {
@@ -291,23 +275,21 @@ header a:hover {
 }
 
 .main-location h2 {
-    font-size: 3rem;
-    letter-spacing: 15px;
-    margin: 20px 0;
-    text-transform: uppercase;
     text-align: center;
-    color: whitesmoke;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: #333;
 }
 
 .location-container {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     min-width: 300px;
     background: white;
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .map-section {
