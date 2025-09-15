@@ -100,11 +100,15 @@ header a:hover {
     color: white;
     border: none;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transform: translateY(0px);
+    transition:0.6s;
 }
 
 .main-home button:hover {
     background-color: darkgreen;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    transition: 0.6s;
 }
 
 /* ABOUT */
@@ -247,6 +251,10 @@ header a:hover {
     padding: 25px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+.blog-post:hover {
+    transform: translateY(-5px);
 }
 
 .blog-post h3 {
@@ -283,9 +291,9 @@ header a:hover {
 
 .location-container {
     display: flex;
-    min-width: 300px;
+    min-width: 20vh;
     background: white;
-    padding: 30px;
+    padding: 10px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     align-items: center;
@@ -294,7 +302,8 @@ header a:hover {
 
 .map-section {
     flex: 1;
-    min-height: 500px;
+    height: 30vh;
+    width: 20%;
 }
 
 .info-section {
